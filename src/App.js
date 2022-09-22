@@ -1,11 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { createBrowserRouter,RouterProvider  } from "react-router-dom";
+import { ROUTES } from "./routes/route";
+
+const router = createBrowserRouter(ROUTES);
 
 function App() {
   return (
-    <h1>
-      Hello World
-    </h1>
+      <RouterProvider router={router} />
   );
 }
 
